@@ -7,7 +7,7 @@ dbt (data build tool) is an open-source tool that enables data analysts and engi
 
 *by chatgpt*
 
-## what are we going to do
+## What are we going to do
 
 1. First, let's clone the repository and use the Northwind database as an example.
 
@@ -18,4 +18,7 @@ We will use the repository created by the user [lvgalvao](https://github.com/lvg
 
 `git clone git@github.com:lvgalvao/dbt-core-northwind-project.git
 cd dbt-core-northwind-project`
+
+- Docker files are stored at Docker Branch
+
 
