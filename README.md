@@ -22,3 +22,18 @@ cd dbt-core-northwind-project`
 - Docker files are stored at Docker Branch
 
 
+
+
+## Study Notes
+
+- Tudo que o dbt vai rodar fica dentro da pasta models, todos os scripts .sqp que irão criar as views e os reports.
+    - dbt-core-workshop\northwind-project\dbt-core-northwind-project\northwind\models
+    - Para saber um pouco mais sobre o que ele irá criar, ou seja, os scripts por trás que vão se comunicar com o banco, temos que ir na pasta target, onde lá teremos os scripts DDL's que irão rodar dentro do postgres depois do dbt-run
+
+- Depois que fizemos a instalção das dependências utilizando o docker, entramos nele e na dependencia do dbt-core, clicamos nos três pntinhos para abrir o terminal de comando. Nele rodamos algumas coisas importantes como:
+    - dbt debug -> para entender se está tudo o que com a instalação do dbt e com a comunicação com o banco.
+    - dbt deps -> instala as dependencias faltantes do projeto
+    - dbt run -> executa todos os scripts .sql na pasta models mencionada acima.
+
+- Documentação fica dentro do manifest.json     
+    - dbt-core-workshop\northwind-project\dbt-core-northwind-project\northwind\target\manifest.json
